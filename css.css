@@ -341,11 +341,15 @@ padding-top:0px;
  @media(max-width:700px){
     .container > h2,.pa{
         
-     margin-left: 30%;
+     margin-left: 20%;
 
-    }  
+    } 
+    .container > .pa{
+        margin-top: 150px;
+    } 
     .mais{
         margin-left: 40%;
+        margin-top: 350px;
     }
 }
 /************end responsive iniko***********************/
