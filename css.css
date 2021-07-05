@@ -345,11 +345,12 @@ padding-top:0px;
 
     } 
     .container > .pa{
-        margin-top: 150px;
+        margin-top: 160px;
+        margin-left: 10%;
     } 
     .mais{
-        margin-left: 40%;
-        margin-top: 350px;
+        margin-left: 30%;
+        margin-top: 400px;
     }
 }
 /************end responsive iniko***********************/
