@@ -1,4 +1,7 @@
 /*******start variables***********/
+
+
+/************************************************************************************/
 :root{
     --maincolor:rgb(6, 5, 22);
     --hover:rgb(197, 197, 228);
@@ -85,7 +88,7 @@
 
 @media(max-width:700px){
 .con{
-    height: 200px;
+    min-height: 300px;
 }
     .con >.onnav {
         margin: 0 auto;
@@ -184,7 +187,7 @@ padding-top:0px;
     .nav > .nav-links{
         display: inline;
         float: right;
-       
+       padding-right: 70px;
         font-size: 18px;
     }
     
@@ -208,8 +211,10 @@ padding-top:0px;
        text-transform: uppercase;
        font-family: Arial, Helvetica, sans-serif;
     }
-   
-@media(max-width:700px){
+
+
+
+@media(max-width:1078px){
     .nav > .nav-btn{
         display: inline-block;
         position:absolute;
@@ -220,7 +225,7 @@ padding-top:0px;
     #nav-check:checked ~ .nav-links{
         background-color:rgb(163, 110, 12);
         z-index: 10000;
-    }*
+    }
     .nav > .nav-btn > label{
         width: 50px;
         height: 50px;
@@ -300,7 +305,7 @@ padding-top:0px;
 
 .iniko{
     margin:0 auto;
-    width:100%;
+    /*width:100%;*/
     max-width: 100%;
     position:relative;
     background-image: url("br.jpg");
@@ -312,6 +317,7 @@ padding-top:0px;
 }
 .container{
     max-width: 100%;
+  
     
    
  }
@@ -322,7 +328,7 @@ padding-top:0px;
      line-height: 1.4;
      font-weight:bold;
      margin-bottom: 20px;
-     margin-left: 120px;
+    margin-left: 120px;
  }
 .container > .pa{
     position:absolute;
@@ -330,7 +336,7 @@ padding-top:0px;
     line-height: 1.4;
     color:rgb(48, 3, 3);
     margin-bottom: 20px;
-    margin-left: 120px;
+   margin-left: 120px;
 }
  
  .mais{
@@ -343,6 +349,7 @@ padding-top:0px;
  }
  /********responsive iniko***************/
  @media(max-width:700px){
+
     .container > h2,.pa{
         
      margin-left: 20%;
@@ -355,6 +362,11 @@ padding-top:0px;
     .mais{
         margin-left: 30%;
         margin-top: 400px;
+    }
+}
+@media(max-width:250px){
+    .mais{
+        display: none;
     }
 }
 /************end responsive iniko***********************/
@@ -579,8 +591,10 @@ margin-left:45%;
         /*se1*/
 
        input[type="text"],textarea,input[type="email"]{
-           width:100%;
+     width:100%;
            padding-top: 50px;
+         
+           
            border: none;
            border-bottom: 1px solid white;
            background-color:var(--maincolor);
@@ -676,7 +690,19 @@ margin-left:45%;
         grid-template-rows: repeat(2,1fr);
         grid-row-gap: 20px;
     }
+
 }
+@media(max-width:360px){
+   .contac > .conte > .line > .info{
+    display: flex;
+    flex-direction: column;
+    }
+    .robot{
+       display:none;
+    }
+    input[type="text"],textarea,input[type="email"]{
+    width:none;
+}}
 
 /****************************footer*******/
 footer{
@@ -738,33 +764,5 @@ footer .conte .logo{
 }
 .footer .conte .remainder {
     padding-left: 50%;
-}
-}
-/*
-
-
-
-.servi .card{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-   
-    max-width: 100%;
-}
-  
-.boxx{
-    display: flex;
-    max-width: 100%;
-}
-
-
-*/
-/*********start services
-
-
-.services{
-
-
-
-}
-/*end services*/
-
+}}
+/*********************************************************************************************************************************************/
